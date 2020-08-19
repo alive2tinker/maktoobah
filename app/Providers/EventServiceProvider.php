@@ -18,6 +18,12 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        'App\Events\FavoriteCreated' => [
+            'App\Listeners\NotifyUser'
+        ],
+        'App\Events\MessageSent' => [
+            'App\Listeners\HandleNewMessage'
+        ]
     ];
 
     /**

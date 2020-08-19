@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Cairo;
+    src: url('../fonts/Cairo/Cairo-Regular.ttf');
+}
+@font-face {
+    font-family: Cairo-Black;
+    src: url('../fonts/Cairo/Cairo-Black.ttf');
+}
+@font-face {
+    font-family: Cairo-SemiBold;
+    src: url("../fonts/Cairo/Cairo-SemiBold.ttf");
+}
+html, body{
+    direction: rtl !important;
+    font-family: Cairo!important;
+    text-align: right !important;
+}
+h1,h2,h3,h4,h5,h6{
+    direction: rtl !important;
+    font-family: Cairo-Black !important;
+    text-align: right !important;
+}
+.nav-link, .dropdown-item, h5.mb-1 a{
+    font-family: Cairo-SemiBold;
+}
+input {
+    text-indent: 0.5em;
+}
+.avatar{
+    display: block;
+    clear: both;
+}
