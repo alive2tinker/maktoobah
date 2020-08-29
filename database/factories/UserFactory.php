@@ -18,7 +18,8 @@ use Illuminate\Support\Str;
 */
 
 $factory->define(User::class, function (Faker $faker) {
-    $gender = $faker->randomElement(['male', 'female']);
+    $genders = ['male', 'female'];
+    $gender = $genders[$faker->boolean(50)];
     $dateOfBirth = $faker->dateTimeBetween('1970-01-01', '2002-12-31')
         ->format('Y-m-d');
     $age = \Carbon\Carbon::parse($dateOfBirth)->age;
