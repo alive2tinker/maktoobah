@@ -10,10 +10,10 @@ class SearchController extends Controller
 {
     public function __invoke(Request $request){
 
-        $users = UserRepository::search($request->input('keywords'));
+        $repo = new UserRepository();
 
         return view('home', [
-            'users' => $users,
+            'users' => $repo->search($request->input('keywords')),
         ]);
     }
 }

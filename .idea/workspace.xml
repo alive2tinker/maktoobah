@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff2ce74b-42be-455f-aa27-005b336f8ed9" name="Default Changelist" comment="updated repository methods" />
+    <list default="true" id="ff2ce74b-42be-455f-aa27-005b336f8ed9" name="Default Changelist" comment="updated front page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/facades/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/facades/UserRepository.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +203,7 @@
       <workItem from="1597110878405" duration="29000" />
       <workItem from="1597853522342" duration="8555000" />
       <workItem from="1597903208357" duration="4878000" />
-      <workItem from="1598652765303" duration="12309000" />
+      <workItem from="1598652765303" duration="13470000" />
     </task>
     <task id="LOCAL-00001" summary="finalizing the app">
       <created>1597858522997</created>
@@ -257,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598714029280</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated front page">
+      <created>1598725684294</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1598725684294</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated front page">
+      <created>1598725763889</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598725763889</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +304,8 @@
     <MESSAGE value="hotfix" />
     <MESSAGE value="updated user seeder" />
     <MESSAGE value="updated repository methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated repository methods" />
+    <MESSAGE value="updated front page" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated front page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="672" y="351" width="638" height="411" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596429838440">
@@ -313,10 +332,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="574" height="446" key="SwitcherDM/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1596879776728" />
-    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1598714035091">
+    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1598725765552">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598714035091" />
+    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598725765552" />
     <state x="606" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597936118858">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -325,9 +344,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="688" y="94" width="616" height="918" key="find.popup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1596524421553" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1598725508730">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1598726693371">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598725508730" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598726693371" />
   </component>
 </project>
