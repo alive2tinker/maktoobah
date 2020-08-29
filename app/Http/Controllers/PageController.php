@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Facades\App\Repositories\facades\UserRepository;
+use App\Repositories\facades\UserRepository;
 use Illuminate\Http\Request;
 class PageController extends Controller
 {
