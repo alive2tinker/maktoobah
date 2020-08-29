@@ -24,7 +24,8 @@ class FavoriteController extends Controller
 
     public function list()
     {
-        return FavoriteRepository::all();
+        $repo = new FavoriteRepository();
+        return $repo->all();
     }
 
     /**

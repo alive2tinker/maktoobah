@@ -19,9 +19,9 @@ class ChatController extends Controller
      */
     public function index()
     {
-        $chats = ChatRepository::list();
+        $repo = new ChatRepository();
         return view('chats.index', [
-            'chats' => $chats
+            'chats' => $repo->list()
         ]);
     }
 
