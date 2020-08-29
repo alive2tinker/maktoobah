@@ -3,59 +3,20 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-4 d-none d-lg-block">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">@lang('strings.search')</h3>
-                    <form action="{{ route('search') }}" method="get">
-                        @csrf
-                        <div class="form-group">
-                            <label for="countries-list">@lang('strings.country')</label>
-                            <select id="countries-list" class="form-control">
-                                <option value="">@lang('strings.choose')</option>
-                                @foreach ($countries as $country)
-                                    <option value="{{ $country->id }}">{{  $country->name() }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="cities-list">@lang('strings.city')</label>
-                            <select name="city_id" id="cities-list" class="form-control">
-                                <option value="">@lang('strings.select_countries_first')</option>
-                            </select>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <label for="formControlRange">@lang('strings.age')</label>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="age-from">@lang('strings.from')</label>
-                                <input type="number" name="age_from" class="form-control" value="{{ old('age_from') }}" id="age-from">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="age-to">@lang('strings.to')</label>
-                                <input type="number" name="age_to" class="form-control" value="{{ old('age_to') }}" id="age-to">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="tribal-status">@lang('strings.tribal')?</label>
-                            <select name="tribal" id="tribal-status" class="form-control">
-                                <option value="">@lang('strings.choose')</option>
-                                <option value="0">@lang('strings.not_tribal')</option>
-                                <option value="1">@lang('strings.tribal')</option>
-                            </select>
-                        </div>
-                        <div class="form-row justify-content-center">
-                            <div class="col-md-5"><button type="submit" class="btn btn-primary btn-block">@lang('strings.do_search')</button></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <div class="d-none d-lg-block col-md-2"></div>
         <div class="col-md-8">
+            <form action="{{ route('search') }}" method="get">
+                @csrf
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="@lang('strings.search_keywords')" name="keywords" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">@lang('strings.search')</button>
+                    </div>
+                </div>
+            </form>
             <div class="list-group">
                 @forelse($users as $user)
-                    <div class="list-group-item list-group-item-action">
+                    <div class="list-group-item list-group-item-action border-0 shadow">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1"><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></h5>
                             <small>{{ $user->updated_at->diffForHumans() }}</small>
@@ -107,6 +68,7 @@
                 {{ $users->links() }}
             </div>
         </div>
+        <div class="d-none d-lg-block col-md-2"></div>
     </div>
 </div>
 @endsection

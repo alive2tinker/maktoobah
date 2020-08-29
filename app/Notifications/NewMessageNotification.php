@@ -42,7 +42,7 @@ class NewMessageNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject(trans('strings.new_favorite_notification'))
+            ->subject(trans('strings.new_message_notification'))
             ->greeting(trans('strings.hello') . $notifiable->name)
             ->line(trans('strings.user') . " " . $this->message->user->name . " " .trans("strings.has_sent_amessage"))
             ->action(trans('strings.view_message'), route('chats.show', $this->message->chat->id))

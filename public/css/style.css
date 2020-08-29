@@ -14,19 +14,19 @@ html, body{
     direction: rtl !important;
     font-family: Cairo!important;
     text-align: right !important;
+    background: #FFF7FA !important;
 }
 h1,h2,h3,h4,h5,h6{
     direction: rtl !important;
-    font-family: Cairo-Black !important;
     text-align: right !important;
 }
-.nav-link, .dropdown-item, h5.mb-1 a{
-    font-family: Cairo-SemiBold;
+h1,h2,h3{
+    font-family: Cairo-Black !important;
 }
-input {
-    text-indent: 0.5em;
+h4,h5,h6{
+    font-family: Cairo-SemiBold !important;
 }
-.avatar{
-    display: block;
-    clear: both;
+.img-thumb{
+    width: 64px;
+    height: 64px;
 }

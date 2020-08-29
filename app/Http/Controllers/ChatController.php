@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Chat;
+use App\Repositories\facades\ChatRepository;
 use Illuminate\Http\Request;
 use App\Http\Resources\ChatResource;
 use App\Http\Requests\StoreChat;
@@ -18,8 +19,9 @@ class ChatController extends Controller
      */
     public function index()
     {
+        $chats = ChatRepository::list();
         return view('chats.index', [
-            'chats' => Auth::user()->chats()
+            'chats' => $chats
         ]);
     }
 

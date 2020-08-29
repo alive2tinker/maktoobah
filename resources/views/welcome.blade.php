@@ -21,9 +21,9 @@
     <nav class="navbar navbar-light navbar-expand-lg border-bottom">
         <div class="container">
             @guest
-                <a class="navbar-brand" href="/">@lang('strings.' . config('app.name'))</a>
+                <a class="navbar-brand" href="/"><h1>@lang('strings.' . config('app.name'))</h1></a>
             @else
-                <a class="navbar-brand" href="{{ route('home') }}">@lang('strings.' . config('app.name'))</a>
+                <a class="navbar-brand" href="{{ route('home') }}"><h1>@lang('strings.' . config('app.name'))</h1></a>
             @endguest
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -77,44 +77,22 @@
             </div>
         </div>
     </nav>
-    <div class="mt-5">
-        <h1 class="display-3 text-center">@lang('strings.landing_message')</h1>
-        <p class="text-center mt-5">@lang('strings.landing_message_sub')</p>
-    </div>
-    <div class="row">
-        <div class="col-6 col-md-3">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-center">{{ $users }}</h1>
-                    <p class="mt-3 text-center">@lang('strings.users')</p>
-                </div>
+    <h1 class="text-center">@lang('strings.welcome')</h1>
+    <p class="text-muted text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolor dolorum eum excepturi
+        facere ipsa laboriosam libero nemo, optio placeat sed tempora unde? Asperiores doloremque, eos esse excepturi
+        nulla quae!</p>
+    <ul class="list-unstyled">
+        @foreach($users as $user)
+        <li class="media my-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU" class="mr-3 img-thumbnail img-thumb" alt="...">
+            <div class="media-body bg-white p-2">
+                <h5 class="mt-0 mb-1">{{ $user->name }}</h5>
+                {{ $user->details }}
             </div>
-        </div>
-        <div class="col-6 col-md-3">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-center">{{ $products }}</h1>
-                    <p class="mt-3 text-center">@lang('strings.products')</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-md-3 mt-4 mt-md-0">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h1 class="display-4">title</h1>
-                    <p class="mt-3">stat description</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-md-3 mt-4 mt-md-0">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h1 class="display-4">title</h1>
-                    <p class="mt-3">stat description</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        </li>
+        @endforeach
+    </ul>
 </div>
+<script data-ad-client="ca-pub-2662394717663527" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 </html>

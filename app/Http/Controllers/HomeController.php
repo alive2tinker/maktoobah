@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Country;
+use App\Repositories\facades\UserRepository;
 use App\User;
 use Illuminate\Http\Request;
 use Auth;
@@ -25,13 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $potentialMates = User::where([
-            ['gender', '!=', Auth::user()->gender],
-            ['id', '!=', Auth::user()->id]
-        ])->orderby('updated_at','desc')->paginate(10);
+        $potentialMates = UserRepository::potentialMates();
         return view('home', [
-            'users' => $potentialMates,
-            'countries' => Country::all()
+            'users' => $potentialMates
         ]);
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Events\FavoriteCreated;
 use App\Favorite;
 use App\Http\Resources\FavoriteResource;
+use App\Repositories\facades\FavoriteRepository;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
@@ -23,7 +24,7 @@ class FavoriteController extends Controller
 
     public function list()
     {
-        return FavoriteResource::collection(Auth::user()->favorites()->orderBy('created_at')->paginate(10));
+        return FavoriteRepository::all();
     }
 
     /**

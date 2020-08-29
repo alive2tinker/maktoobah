@@ -1,4 +1,9 @@
 {
     "Regards" : "مع اطيب التحيات،",
-    "All rights reserved.": "جميع الحقوق محفوظة"
+    "All rights reserved.": "جميع الحقوق محفوظة",
+    "Reset Password Notification": "تنبيه استعادة كلمة المرور",
+    "You are receiving this email because we received a password reset request for your account.": "لقد استلمت هذا الايميل بناء على طلبك استعادة كلمة المرور",
+    "Reset Password": "استعادة كلمة المرور",
+    "This password reset link will expire in :count minutes.": "سينتهي رابط استعادة كلمة المرور خلال :count دقائق",
+    "If you did not request a password reset, no further action is required.": "اذا لم تقم بطلب استعادة كلمة المرور، لاداعي للقيام باي عمل اخر"
 }

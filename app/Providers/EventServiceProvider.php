@@ -23,6 +23,9 @@ class EventServiceProvider extends ServiceProvider
         ],
         'App\Events\MessageSent' => [
             'App\Listeners\HandleNewMessage'
+        ],
+        'App\Events\UserCreated' => [
+            'App\Listeners\UpdateSearchIndex'
         ]
     ];
 

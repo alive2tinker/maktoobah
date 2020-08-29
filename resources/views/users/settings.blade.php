@@ -8,6 +8,12 @@
                 <form class="mt-3" action="{{ route('users.update_personal') }}" method="post">
                     @csrf
                     <div class="form-row">
+                        <div class="col-md-3 form-group">
+                            <label for="user-name">@lang('strings.name')</label>
+                            <input type="text" name="name" value="{{ old('name', auth()->user()->name) }}" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
                         <div class="col-md-3 form-group"><label for="user-email">@lang('strings.email')</label><input
                                 type="email" class="form-control" name="email" value="{{ old('email', auth()->user()->email) }}" id="user-email"></div>
                     </div>

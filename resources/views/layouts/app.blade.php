@@ -80,13 +80,22 @@
                 </div>
             </div>
         </nav>
-
+        <div class="container">
+            @if(\Illuminate\Support\Facades\Session::has('success'))
+                <div class="alert alert-success">{{ \Illuminate\Support\Facades\Session::get('success') }}</div>
+            @elseif ($errors->any())
+                @foreach($errors->all() as $error)
+                    <div class="alert alert-danger">{{ $error }}</div>
+                @endforeach
+            @endif
+        </div>
         <main class="py-4">
             @yield('content')
         </main>
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script data-ad-client="ca-pub-2662394717663527" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     @yield('js')
 </body>
 </html>

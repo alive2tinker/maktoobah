@@ -5,7 +5,7 @@
             <div class="col-md-8">
                 <div class="list-group">
                     @forelse($chats as $chat)
-                        <a href="{{ route('chats.show', $chat->id) }}" class="list-group-item list-group-item-action">
+                        <a href="{{ route('chats.show', $chat->id) }}" class="list-group-item list-group-item-action border-0 shadow">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">{{ $chat->otherEnd()->name }}</h5>
                                 <small class="text-muted">{{ $chat->messages->last() != null ? $chat->messages->last()->created_at->diffForHumans() : '' }}</small>

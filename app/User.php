@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Events\UserCreated;
 use Carbon\Carbon;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -33,8 +34,37 @@ class User extends Authenticatable
         'details',
         'polygamy_friendly',
         'misyar_friendly',
-        'age'
+        'age',
+        'search_index'
     ];
+
+    protected static function booted()
+    {
+        static::created(function ($user) {
+            $searchIndex = "name:".$user->name
+                .",city:".$user->city->name()
+                .",gender:".$user->gender
+                .",nationality:".$user->nationality
+                .",weight:".$user->weight
+                .",height:".$user->height
+                .",education:".$user->education
+                .",details:".$user->details
+                .",polygamy_friendly:".$user->polygamy_friendly
+                .",age:".$user->age()
+                .",misyar_friendly:".$user->misyar_friendly
+                .",smoker:".$user->smoker
+                .",skin_color:".$user->skin_color
+                .",tribal:".$user->tribal
+                .",hair_color:".$user->hair_color
+                .",eye_color:".$user->eye_color
+                .",marital_status:".$user->marital_status
+                .",job:".$user->job
+                .",hair_type:".$user->hair_type;
+            $user->update([
+                'search_index' => $searchIndex
+            ]);
+        });
+    }
 
     public function city()
     {

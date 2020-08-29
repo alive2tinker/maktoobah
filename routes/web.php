@@ -13,13 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome', [
-        'users' => count(\App\User::all()),
-        'products' => 0
-    ]);
-})->name('index');
-
+Route::prefix('/')->group(function(){
+    Route::get('/','PageController@index');
+});
 Auth::routes(['verify' => true]);
 
 Route::resource('/contacts','ContactController');
