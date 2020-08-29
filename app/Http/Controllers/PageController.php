@@ -8,9 +8,9 @@ class PageController extends Controller
 {
     public function index()
     {
-        $users = UserRepository::latest();
+        $repo = new UserRepository();
         return view('welcome', [
-            'users' => $users
+            'users' => $repo->latest()
         ]);
     }
 }
