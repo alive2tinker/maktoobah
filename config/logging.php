@@ -41,6 +41,11 @@ return [
             'ignore_exceptions' => false,
         ],
 
+        // Create a bugsnag logging channel:
+        'bugsnag' => [
+            'driver' => 'bugsnag',
+        ],
+
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
