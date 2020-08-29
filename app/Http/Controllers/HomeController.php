@@ -26,9 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $potentialMates = UserRepository::potentialMates();
+        $repo = new UserRepository();
         return view('home', [
-            'users' => $potentialMates
+            'users' => $repo->potentialMates()
         ]);
     }
 }
