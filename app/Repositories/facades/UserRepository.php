@@ -16,7 +16,6 @@ class UserRepository
     {
         $key = $this->getCacheKey('latest');
 
-        dd($key);
         return cache()->remember($key, Carbon::now()->addDay(), function(){
             return User::orderby('updated_at','desc')->take(10)->get();
         });
