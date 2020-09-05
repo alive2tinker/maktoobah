@@ -22,11 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff2ce74b-42be-455f-aa27-005b336f8ed9" name="Default Changelist" comment="updated front page">
+    <list default="true" id="ff2ce74b-42be-455f-aa27-005b336f8ed9" name="Default Changelist" comment="implemented bugsnag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,9 +173,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;PHP" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../estibanah" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -207,7 +205,8 @@
       <workItem from="1597110878405" duration="29000" />
       <workItem from="1597853522342" duration="8555000" />
       <workItem from="1597903208357" duration="4878000" />
-      <workItem from="1598652765303" duration="14283000" />
+      <workItem from="1598652765303" duration="15034000" />
+      <workItem from="1598732432827" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="finalizing the app">
       <created>1597858522997</created>
@@ -286,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598726734882</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="implemented bugsnag">
+      <created>1598727680014</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598727680014</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +322,8 @@
     <MESSAGE value="updated user seeder" />
     <MESSAGE value="updated repository methods" />
     <MESSAGE value="updated front page" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated front page" />
+    <MESSAGE value="implemented bugsnag" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented bugsnag" />
   </component>
   <component name="WindowStateProjectService">
     <state x="672" y="351" width="638" height="411" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596429838440">
@@ -327,10 +334,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598707257522" />
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1597110905879">
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1598732441115">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1597110905879" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598732441115" />
     <state x="759" y="257" width="527" height="600" key="NewPhpClassDialog" timestamp="1598705852398">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -343,10 +350,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="574" height="446" key="SwitcherDM/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1596879776728" />
-    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1598726741867">
+    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1598727686018">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598726741867" />
+    <state x="591" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598727686018" />
     <state x="606" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597936118858">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -355,9 +362,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="688" y="94" width="616" height="918" key="find.popup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1596524421553" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1598727513206">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1598727611540">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598727513206" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1598727611540" />
   </component>
 </project>
